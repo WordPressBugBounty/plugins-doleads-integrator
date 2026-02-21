@@ -1,0 +1,62 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.loader-screen{
+	display: none;
+}
+.loader-screen.in{
+	display: block;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 160px;
+	right: 0;
+	height: 100%;
+	background-color: rgba(255,255,255,0.6);
+}
+.loader-screen.in .ls-spinner{
+	position: absolute;
+  	border-radius: 50%;
+	border: 5px solid transparent;
+  	border-top: 5px solid #3498db;
+  	left: calc(50% - 30px);
+  	top: calc(50% - 30px);
+  	width: 60px;
+  	height: 60px;
+  	-webkit-animation: spin 1s linear infinite;
+  	animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  	0% { -webkit-transform: rotate(0deg); }
+  	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  	0% { transform: rotate(0deg); }
+  	100% { transform: rotate(360deg); }
+}
+
+.ledo-admin-wrap .form-table .widefat td, 
+.ledo-admin-wrap .form-table .widefat th{
+    padding: 8px 10px;
+}
+.ledo-admin-wrap .form-table .widefat select.regular-text{
+    width: 100%;
+}
+
+.ledo-admin-wrap .row-actions{
+    left: auto;
+}
+.ledo-admin-wrap .row-actions .trash {
+    cursor: pointer;
+    color: #800000;
+}
+.ledo-admin-wrap .row-actions .edit:hover{
+  color: #00f;
+}
+.ledo-admin-wrap .row-actions .trash:hover {
+    color: #f00;
+}
